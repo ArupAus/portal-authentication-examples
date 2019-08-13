@@ -37,15 +37,15 @@
       };
 
       var authInfo = {
-        title:"UUS Viewer",
-        clientId:"6zv6rmrO9TbI0M7xGQ71v1Xyshw01CJv",
-        domain:"arupdigital.au.auth0.com",
+        title:"Test Viewer",
+        clientId:"U7koUqTO1zBel4f7wGHrqXe0V8ZI2r15",
+        domain:"arupdigital-test.au.auth0.com",
         options:{auth0Options}
       }
 
       var auth = new AuthProvider(authInfo)
 
-      let fetchUrl = 'https://portal-staging.arup.digital/graphql'
+      let fetchUrl = 'https://portal.arup.digital/graphql'
 
       let body = JSON.stringify({
         query: `query authorizeUser($url: String){authorizeUser(url: $url)}`,

@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="testauth0._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    
+
     <% if (pubLoadCase == "allow") {%>
         <%-- Insert your application here --%>
         <div>
@@ -22,7 +22,7 @@
     <%} else if (pubLoadCase == "redirect") {%>
         <%-- Redirect to portal.arup.digital no config id query --%>
         <script>
-            window.location.href = "https://portal-staging.arup.digital"
+            window.location.href = "https://portal.arup.digital"
         </script>
     <%} else {%>
         <%-- Display loading screen whilst authenticating --%>
@@ -33,7 +33,7 @@
         </div>
     <%}%>
 
-    
+
 <script src="./Scripts/compiled.js" language="javascript" type="text/javascript"></script>
 
     <script type="text/javascript">
@@ -51,8 +51,8 @@
 
       var authInfo = {
         title:"Other Module",
-        clientId:"6zv6rmrO9TbI0M7xGQ71v1Xyshw01CJv",
-        domain:"arupdigital.au.auth0.com",
+        clientId:"U7koUqTO1zBel4f7wGHrqXe0V8ZI2r15",
+        domain:"arupdigital-test.au.auth0.com",
         options:{auth0Options}
       }
 

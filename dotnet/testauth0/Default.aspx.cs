@@ -26,7 +26,7 @@ namespace testauth0
 
             string url = Request.Url.AbsoluteUri.Split('?')[0];
 
-            WebRequest req = WebRequest.Create("https://portal-staging.arup.digital/graphql");
+            WebRequest req = WebRequest.Create("https://portal.arup.digital/graphql");
 
             req.Method = "POST";
             req.ContentType = "application/json";
@@ -87,7 +87,7 @@ namespace testauth0
             dataStream.Close();
             response.Close();
 
-            WebRequest req2 = WebRequest.Create("https://portal-staging.arup.digital/graphql");
+            WebRequest req2 = WebRequest.Create("https://portal.arup.digital/graphql");
 
             req2.Method = "POST";
             req2.ContentType = "application/json";
